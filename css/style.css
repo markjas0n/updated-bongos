@@ -1,0 +1,78 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #4b6cb7; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #182848, #4b6cb7);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.search, .current-weather, .forecast {
+    margin: 20px 0;
+}
+
+#city-input {
+    width: 200px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#search-btn {
+    padding: 10px;
+}
+
+#history {
+    margin-top: 20px;
+}
+
+#history button {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%;
+    background: #ccc;
+    border: none;
+    cursor: pointer;
+}
+
+.current-weather {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-count: 5;}
+
+.forecast .day {
+    background: #1f2f46;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    flex: 1;
+    text-align: center;
+    column-count: 5;
+}
+.forecast-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    column-count: 5;
+}
