@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8"> <!-- Define character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensure responsive design -->
+    <title>Weather Dashboard</title> <!-- Page title -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to the external stylesheet -->
 </head>
 <body>
-    <div class="container">
+    <div class="container"> <!-- Main container -->
         <header>
-            <h1>Weather Dashboard</h1>
+            <h1>Weather Dashboard</h1> <!-- Header title -->
         </header>
         <section class="search">
-            <h2>Search for a City:</h2>
-            <input type="text" id="city-input" placeholder="San Diego">
-            <button id="search-btn">Search</button>
-            <div id="history"></div>
+            <h2>Search for a City:</h2> <!-- Search section title -->
+            <input type="text" id="city-input" placeholder="San Diego"> <!-- City input field -->
+            <button id="search-btn">Search</button> <!-- Search button -->
+            <div id="history"></div> <!-- Container for search history -->
         </section>
         <section class="current-weather">
-            <h2 id="current-city">Atlanta (9/13/2022) <span>☀️</span></h2>
-            <p>Temp: <span id="current-temp">76.62°F</span></p>
-            <p>Wind: <span id="current-wind">8.43 MPH</span></p>
-            <p>Humidity: <span id="current-humidity">44%</span></p>
+            <h2 id="current-city">Atlanta (9/13/2022) <span>☀️</span></h2> <!-- Current city, date, and weather icon -->
+            <p>Temp: <span id="current-temp">76.62°F</span></p> <!-- Current temperature -->
+            <p>Wind: <span id="current-wind">8.43 MPH</span></p> <!-- Current wind speed -->
+            <p>Humidity: <span id="current-humidity">44%</span></p> <!-- Current humidity -->
         </section>
         <section class="forecast">
-            <h2>5-Day Forecast:</h2>
-            <div id="forecast-container"></div>
+            <h2>5-Day Forecast:</h2> <!-- Forecast section title -->
+            <div id="forecast-container"></div> <!-- Container for forecast data -->
         </section>
     </div>
-    <script src="script.js/scipt.js"></script>
+    <script src="script.js/scipt.js"></script> <!-- Link to the external JavaScript file -->
 </body>
 </html>

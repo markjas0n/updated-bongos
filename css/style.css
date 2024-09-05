@@ -1,16 +1,18 @@
-/* styles.css */
+/* Reset body margin and padding, and set a global font */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Center the content within the container and add padding */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
+/* Style the header with a gradient background and center the text */
 header {
     background: #4b6cb7; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #182848, #4b6cb7); /* Chrome 10-25, Safari 5.1-6 */
@@ -20,24 +22,29 @@ header {
     padding: 20px 0;
 }
 
+/* Add margin to the search input, current weather, and forecast sections */
 .search, .current-weather, .forecast {
     margin: 20px 0;
 }
 
+/* Style the city input field */
 #city-input {
     width: 200px;
     padding: 10px;
     margin-right: 10px;
 }
 
+/* Style the search button */
 #search-btn {
     padding: 10px;
 }
 
+/* Style the search history section */
 #history {
     margin-top: 20px;
 }
 
+/* Style individual buttons in the search history */
 #history button {
     display: block;
     margin: 5px 0;
@@ -48,17 +55,20 @@ header {
     cursor: pointer;
 }
 
+/* Style the current weather section with a border and padding */
 .current-weather {
     border: 1px solid #ccc;
     padding: 20px;
 }
 
+/* Style the forecast section as a flexbox with space between items */
 .forecast {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    column-count: 5;}
+}
 
+/* Style individual day containers within the forecast section */
 .forecast .day {
     background: #1f2f46;
     color: white;
@@ -66,13 +76,4 @@ header {
     margin: 10px;
     flex: 1;
     text-align: center;
-    column-count: 5;
-}
-.forecast-container{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex-direction: column;
-    
-    column-count: 5;
 }
